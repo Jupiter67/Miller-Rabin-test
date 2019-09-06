@@ -3,6 +3,7 @@ import math
 from prettytable import PrettyTable
 
 
+# Miller-Rabin test
 def is_prime(number):
     s = 0
     d = number - 1
@@ -26,7 +27,7 @@ def is_prime(number):
 
 
 if __name__ == "__main__":
-    # 2
+    # Second task: mutiple test
     n = [0] * 10
     p = [0] * 10
     for k in range(10):
@@ -45,6 +46,6 @@ if __name__ == "__main__":
     table.add_row(new_n)
     table.align["Name"] = "l"
     print(table)
-    # 3
+    # Third task: asymptotic analysis
     pi = (2 ** 128 / math.log(2 ** 128) - 2 ** 127 / math.log(2 ** 127)) / 2 ** 127
     print((1 / pi))
